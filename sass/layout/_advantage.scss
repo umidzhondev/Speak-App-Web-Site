@@ -1,0 +1,162 @@
+.advantage {
+    width: 100%;
+
+    @include responsive(lg) {
+        padding-top: 100px;
+    }
+
+    @include responsive(md) {
+        padding-top: 70px;
+    }
+
+    @include responsive(sm) {
+        padding-top: 0;
+        background-color: $primary-color-opacity-10;
+    }
+
+    &__content {
+        @include flex(space-between, flex-start, row);
+        background-color: $primary-color-opacity-10;
+        padding: 50px 0;
+        width: 100%;
+        border-radius: $border-radius-24;
+        height: 520px;
+        padding-left: 45px;
+        padding-right: 30px;
+
+        @include responsive(lg) {
+            padding: 40px 0;
+            height: 445px;
+            padding-left: 45px;
+        }
+
+        @include responsive(md) {
+            padding-left: 20px;
+        }
+
+        @include responsive(sm) {
+            flex-direction: column;
+            height: auto;
+            padding-inline: 0;
+            background: none;
+            padding: 40px 0px;
+        }
+
+        @include responsive(xs) {
+            padding: 30px 0;
+        }
+    }
+
+    &__imgbox {
+        transform: translateY(-120px);
+        margin-right: 65px;
+
+        @include responsive(lg) {
+            transform: translateY(-100px);
+        }
+
+        @include responsive(lg) {
+            margin-right: 40px;
+        }
+
+        @include responsive(sm) {
+            transform: none;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+
+            @include responsive(lg) {
+                width: 330px;
+            }
+
+            @include responsive(sm) {
+                width: 200px;
+                text-align: center
+            }
+
+            @include responsive(xs) {
+                width: 180px;
+            }
+
+            @include responsive(xxs) {
+                width: 160px;
+            }
+        }
+    }
+
+    &__info {
+        @include flex(center, flex-start, column);
+
+        @include responsive(sm) {
+            padding-left: 20px;
+        }
+
+        @include responsive(xs) {
+            padding-left: 10px;
+        }
+    }
+
+    &__title {
+        color: $black-color;
+        margin-bottom: 40px;
+
+        @include responsive(xs) {
+            margin-bottom: 30px;
+        }
+
+        @include responsive(xxs) {
+            text-align: center;
+        }
+    }
+
+    &__list {
+        @include flex(center, flex-start, column);
+    }
+
+    &__item {
+        @include flex(center, flex-start, column);
+        margin-bottom: 20px;
+
+
+        h4 {
+            position: relative;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            color: $black-color;
+            margin-bottom: 5px;
+            @include flex(center, center, row);
+
+            &::before {
+                content: "";
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: $primary-color;
+                position: absolute;
+                left: -12px;
+            }
+
+            @include responsive(xs) {
+                font-size: 18px;
+            }
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: $black-color;
+
+            @include responsive(xs) {
+                font-size: 16px;
+            }
+        }
+    }
+
+}

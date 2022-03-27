@@ -1,0 +1,76 @@
+@mixin flex($jc: flex-start, $ai: flex-start, $dr: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $dr;
+  }
+  
+  @mixin center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @mixin transition($property,$duration,$timing-function) {
+    transition: $property $duration $timing-function;
+  }
+  @mixin hoverEffectButton($bg-color,$color){
+    &:hover{
+      background-color: $bg-color;
+      border: 2px solid $bg-color;
+      color: $color;
+    }
+  }
+  
+  
+  
+  // * Responsive media mixins
+  
+  @mixin responsive($breakpoint) {
+    @if $breakpoint==xxl {
+      @media screen and (max-width: 1700px) {
+        @content;
+      }
+    }
+    @if $breakpoint==xl {
+      @media screen and (max-width: 1400px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==lg {
+      @media screen and (max-width: 1200px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==md {
+      @media screen and (max-width: 992px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==sm {
+      @media screen and (max-width: 768px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==xs {
+      @media screen and (max-width: 576px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==xxs {
+      @media screen and (max-width: 400px) {
+        @content;
+      }
+    }
+  
+    @if $breakpoint==ss {
+      @media screen and (max-width: 360px) {
+        @content;
+      }
+    }
+    
+  }

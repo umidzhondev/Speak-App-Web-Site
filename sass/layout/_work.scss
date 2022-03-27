@@ -1,0 +1,269 @@
+.work {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        @include flex(center, center, column);
+    }
+
+    &__title {
+        color: $black-color;
+        margin-bottom: 70px;
+
+        @include responsive(md) {
+            margin-bottom: 50px;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__pagination {
+        display: none;
+
+        @include responsive(md) {
+            @include flex(center, center, row);
+            width: 100%;
+            margin-bottom: 50px;
+            gap: 40px;
+
+            &-item {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: $primary-color-opacity-10;
+                color: $primary-color;
+                @include flex(center, center, row);
+                font-size: 22px;
+                line-height: 140%;
+                font-weight: bold;
+                transition: .4s ease-in-out;
+                cursor: pointer;
+                position: relative;
+
+                @include responsive(xs) {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                }
+
+                @include responsive(xxs) {
+                    font-size: 18px;
+                }
+
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+
+                &:not(:last-child) {
+                    &::after {
+                        content: "";
+                        width: 20px;
+                        border-radius: 6px;
+                        height: 3px;
+                        background-color: $primary-color;
+                        position: absolute;
+                        right: -30px;
+                    }
+                }
+            }
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 40px;
+        }
+
+        @include responsive(xxs) {
+            margin-bottom: 30px;
+            gap: 35px;
+        }
+    }
+
+    &--pagination--item--active {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    &__main {
+        width: 100%;
+        @include flex(space-between, center, row);
+        gap: 70px;
+        margin-bottom: 20px;
+
+        @include responsive(lg) {
+            gap: 0px;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__items {
+        @include flex(flex-start, flex-start, column);
+        flex: 1;
+        padding-left: 40px;
+
+        @include responsive(md) {
+            display: none;
+        }
+    }
+
+    &__item {
+        @include flex(flex-start, flex-start, column);
+        margin-bottom: 100px;
+
+        h4 {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 140%;
+            margin-bottom: 10px;
+            position: relative;
+            @include flex(flex-start, flex-start, row);
+
+            &::before {
+                content: "1";
+                position: absolute;
+                left: -45px;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                background-color: $primary-color-opacity-10;
+                color: $primary-color;
+                @include flex(center, center, row);
+            }
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 140%;
+            font-weight: normal;
+            color: $black-lighten-color;
+
+            a {
+                color: $primary-color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &--item--active h4 {
+        &::before {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+
+    &--items--1 {
+        .work__item {
+            &:nth-child(1) h4 {
+                &::before {
+                    content: "1";
+                }
+            }
+
+            &:nth-child(2) h4 {
+                &::before {
+                    content: "3";
+                }
+            }
+        }
+    }
+
+    &--items--2 {
+        .work__item {
+            &:nth-child(1) h4 {
+                &::before {
+                    content: "2";
+                }
+            }
+
+            &:nth-child(2) h4 {
+                &::before {
+                    content: "4";
+                }
+            }
+        }
+    }
+
+    &__imgbox {
+        @include flex(center, center, row);
+        flex: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include responsive(lg) {
+            height: 50%;
+            transform: translateY(-30px);
+        }
+
+        @include responsive(md) {
+            width: auto;
+            flex: none;
+            margin: 0 auto;
+            height: 450px;
+            transform: none;
+        }
+
+        @include responsive(xs) {
+            height: 400px;
+        }
+        @include responsive(xxs){
+         height: 370px;           
+        }
+    }
+
+    &__item-mobile {
+        display: none;
+
+        @include responsive(md) {
+            @include flex(center, center, column);
+            text-align: center;
+            margin-bottom: 40px;
+
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 120%;
+                color: $black-color;
+                margin-bottom: 10px;
+
+                @include responsive(xs) {
+                    font-size: 18px;
+                }
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 18px;
+                width: 80%;
+                line-height: 150%;
+                color: $black-lighten-color;
+
+                @include responsive(xs) {
+                    font-size: 16px;
+                }
+
+                a {
+                    font-size: inherit;
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+        @include responsive(xxs){
+         margin-bottom: 30px;           
+        }
+    }
+
+}

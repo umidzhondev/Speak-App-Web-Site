@@ -1,0 +1,68 @@
+// * Fonts
+@font-face {
+    font-family: "Inter";
+    src: url("/font/Inter-Bold.woff") format("woff2"),
+        url("/font/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/font/Inter-Medium.woff2') format('woff2'),
+        url('/font/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/font/Inter-Regular.woff2') format('woff2'),
+        url('/font/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/font/Inter-SemiBold.woff2') format('woff2'),
+        url('/font/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+// * Importing Scss Files
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/extends";
+@import "../sass/abstracts/mixins";
+
+@import "../sass/base/reset";
+@import "../sass/base/typography";
+@import "../sass/base/utilities";
+
+@import "../sass/components/buttons";
+@import "../sass/components/forms";
+@import "../sass/components/cards";
+
+@import "../sass/layout/footer";
+@import "../sass/layout/header";
+@import "../sass/layout/navigation";
+@import "../sass/layout/container";
+@import "../sass/layout/hero";
+@import "../sass/layout/app";
+@import "../sass/layout/sneakers";
+@import "../sass/layout/help";
+@import "../sass/layout/advantage";
+@import "../sass/layout/steps";
+@import "../sass/layout/services";
+@import "../sass/layout/work";
+@import "../sass/layout/card";
+@import "../sass/layout/review";
+@import "../sass/layout/ceo";
+
+@import "../sass/pages/home";
+

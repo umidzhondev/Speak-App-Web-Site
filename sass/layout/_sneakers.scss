@@ -1,0 +1,74 @@
+.sneakers {
+    width: 100%;
+
+    // padding-top: 140px;
+    &__content {
+        width: 100%;
+        @include flex(space-between, center, column);
+    }
+
+    &__title {
+        margin-bottom: 65px;
+
+        @include responsive(md) {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        @include responsive(sm) {
+            text-align: center;
+        }
+
+        @include responsive(xs) {
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        @include responsive(xxs) {
+            font-size: 24px
+        }
+        @include responsive(ss){
+            font-size: 20px;
+        }
+    }
+
+    &__nav {
+        width: 100%;
+        @include flex(center, center, row);
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 65px;
+
+        &-button {
+            cursor: pointer;
+        }
+
+        @include responsive(md) {
+            margin-bottom: 40px;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &--nav--button--active {
+        color: $primary-color;
+        @include responsive(sm){
+            box-shadow: $primary-shadow-2;
+        }
+    }
+
+    &--nav--button--bg {
+        background-color: $primary-color;
+        color: #fff;
+        font-weight: bold;
+        transition: .35s ease;
+
+        &:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+    }
+
+}

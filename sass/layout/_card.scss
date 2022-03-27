@@ -1,0 +1,233 @@
+.card {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        @include flex(center, flex-start, column);
+    }
+
+    &__title {
+        color: $black-color;
+        margin-bottom: 50px;
+
+        @include responsive(sm) {
+            text-align: center;
+            margin-inline: auto;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__main {
+        width: 100%;
+        @include flex(space-between, center, row);
+        gap: 20px;
+
+        @include responsive(xs) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__box {
+        @include flex(center, flex-start, column);
+        border-radius: $border-radius-24;
+        padding: 30px;
+        position: relative;
+
+        @include responsive(md) {
+            padding: 20px;
+        }
+
+        &:nth-child(1) {
+            background-color: $primary-color-opacity-10;
+            flex: 1;
+            color: $black-lighten-color;
+           
+        }
+
+        &:nth-child(2) {
+            background-color: $primary-color;
+            flex: 1.5;
+            color: #fff;
+        }
+        @include responsive(xs){
+            width: 95%;
+            margin: 0 auto;
+        }
+        @include responsive(xxs){
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 140%;
+            margin-bottom: 5px;
+            color: inherit;
+
+            @include responsive(sm) {
+                padding-top: 25px;
+            }
+        }
+    }
+
+    &__price {
+        width: 100%;
+        @include flex(flex-start, flex-end, row);
+        margin-bottom: 30px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 100%;
+            color: inherit;
+
+            @include responsive(md) {
+                font-size: 38px;
+            }
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            color: inherit;
+
+            @include responsive(md) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__list {
+        @include flex(center, flex-start, column);
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: inherit;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 30px;
+        @include flex(flex-start, center, row);
+
+        @include responsive(md) {
+            font-size: 16px;
+            align-items: flex-start;
+        }
+
+        &::before {
+            content: url("/image/card/card-check-icon.svg");
+            position: absolute;
+            left: 0px;
+            border-radius: 50%;
+            background-color: $primary-color-opacity-10;
+            width: 20px;
+            height: 20px;
+            @include flex(center, center, row);
+        }
+    }
+
+    &__shape {
+        position: absolute;
+        background-color: $yellow-dark-color;
+        padding: 10px 16px;
+        border-radius: 0px 24px 0px 12px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        @include flex(space-between, center, row);
+        gap: 12px;
+
+        @include responsive(md) {
+            padding: 8px 12px;
+        }
+
+        span {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+
+            @include responsive(md) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &--list--2 {
+        .card__item {
+            &::before {
+                content: url("/image/card/card-white-check-icon.svg");
+                background-color: #FFFFFF40;
+            }
+        }
+    }
+
+    &__footer {
+        width: 100%;
+        @include flex(space-between, center, row);
+        gap: 20px;
+
+        @include responsive(md) {
+            flex-direction: column;
+        }
+    }
+
+    &__counter {
+        @include flex(space-between, center, row);
+        background-color: #fff;
+        border-radius: $border-radius-12;
+        width: 100%;
+
+        &-item {
+            padding: 12px 20px;
+            @include flex(space-between, center, row);
+            flex: 1;
+
+            &:first-child {
+                border-right: 2px solid #E0E0E0;
+
+                @include responsive(md) {
+                    flex: 2;
+                }
+            }
+
+            h4 {
+                @include flex(flex-start, center, row);
+                gap: 22px;
+
+                @include responsive(lg) {
+                    gap: 15px;
+                }
+
+                img {
+                    display: flex;
+                    flex: 1;
+                }
+
+                span {
+                    display: flex;
+                    flex: 1;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 135%;
+                    color: $black-lighten-color;
+                }
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 135%;
+                color: #AFAFAF;
+            }
+        }
+    }
+}

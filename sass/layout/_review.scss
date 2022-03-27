@@ -1,0 +1,51 @@
+.review {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        @include flex(center, flex-start, column);
+    }
+
+    &__title{
+        margin-bottom: 50px;
+        color: $black-color;
+        @include responsive(lg) {
+            margin-bottom: 40px;
+        }
+        @include responsive(sm) {
+            text-align: center;
+            width: 100%;
+            margin-inline: auto;
+        }
+        @include responsive(xxs) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .swiper {
+        padding-bottom: 60px;
+
+        &-pagination {
+            span {
+                border: 6px solid $primary-color;
+                padding: 0 7px;
+                border-radius: 12px;
+
+                @include responsive(sm) {
+                    padding: 0 5px;
+                    border: 5px solid $primary-color;
+                }
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            padding: 0 16px;
+
+            @include responsive(sm) {
+                padding: 0 14px;
+            }
+        }
+    }
+
+  
+}

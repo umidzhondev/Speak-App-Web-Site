@@ -1,0 +1,92 @@
+.nav {
+    @include flex(space-between, center, row);
+
+    @include responsive(sm) {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 99;
+        background-color: #ffffffe0;
+        left: 100%;
+        top: 0;
+        flex-direction: column;
+        padding-top: 50px;
+        transition: left .8s ease;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 45px;
+    }
+
+    @include responsive(xs) {
+        padding: 0 30px;
+    }
+
+    &.open {
+        left: 0;
+    }
+
+    &__item {
+        margin: 0 40px;
+
+        @include responsive(md) {
+            margin: 0 25px;
+        }
+
+        @include responsive(sm) {
+            border-bottom: 2px solid;
+            margin: 40px 0;
+            width: 100%;
+            padding-bottom: 22px;
+            &:hover {
+                transition: .3s ease;
+                border-bottom: 2px solid #000;
+    
+                .nav__link {
+                    transition: .3s ease;
+    
+                    color: #000;
+                }
+            }
+        }
+        @include responsive(xs){
+            margin-bottom: 32px 0;
+        }
+
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        color: $black-lighten-color;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $black-lighten-color;
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            transition: width .4s ease;
+            border-radius: 5px;
+        }
+
+        &:hover {
+            color: darken($color: $black-lighten-color, $amount: 1);
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        @include responsive(sm) {
+            &::after {
+                display: none;
+            }
+
+            font-size: 1.5rem;
+        }
+    }
+}

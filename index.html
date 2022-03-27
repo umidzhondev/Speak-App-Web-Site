@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak App Web Site</title>
+    <!--* CSS FILE -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--* CSS FILE END -->
+    <!--* FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--* FONTAWESOME LINK END -->
+    <!--* SWIPER JS - CSS FILE -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--* SWIPER JS - CSS FILE END -->
+
+</head>
+
+<body>
+
+    <!--* ============================================ Frontend Developer - Umidjon Karabaev ============================================ *-->
+
+    <!--* HEADER SECTION -->
+    <section class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="navbar__logo">
+                    <img src="./image/header/logo.svg" alt="Logo...">
+                </a>
+                <ul class="nav">
+                    <i class="fa-solid fa-xmark navbar--close--icon"></i>
+                    <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    <a href="#" class="button__main navbar--button--nav--mobile">Войти</a>
+                </ul>
+                <div class="navbar__buttons">
+                    <!--* Navbar Button -->
+                    <a href="#" class="button__main navbar--button--mobile">Начать беседу</a>
+                    <!--* Navbar Button end -->
+                    <div class="navbar__language">
+                        <div class="navbar__language-imgbox">
+                            <img src="./image/header/USA-flag.svg" alt="image...">
+                        </div>
+                        <div class="navbar__language-info">
+                            <span class="navbar__language-text">EN</span>
+                            <img src="./image/header/angle-down-icon.svg" alt="icon...">
+                        </div>
+                        <div class="navbar__language-options">
+                            <div class="navbar__language-option">
+                                <img src="./image/header/RU-flag.png" alt="image">
+                                <span>RU</span>
+                            </div>
+                            <div class="navbar__language-option">
+                                <img src="./image/header/USA-flag.svg" alt="image">
+                                <span>EN</span>
+                            </div>
+                            <div class="navbar__language-option">
+                                <img src="./image/header/UZ-flag.png" alt="image">
+                                <span>UZ</span>
+                            </div>
+                            <div class="navbar__language-option">
+                                <img src="./image/header/KG-flag.png" alt="image">
+                                <span>KG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="button__main navbar--button">Войти</a>
+                    <!--* Menu icon -->
+                    <div class="navbar__menu-icon navbar--open--icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* HEADER SECTION END -->
+
+    <!--* HERO SECTION  -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__info">
+                    <span class="hero__suptitle">+300 прошедших отбор психологов</span>
+                    <h1 class="hero__title">Сессии с психологом Онлайн</h1>
+                    <a href="#" class="button__main hero--button">Начать беседу</a>
+                </div>
+                <div class="hero__imgbox">
+                    <img src="./image/hero/hero-img.png" alt="image...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* HERO SECTION END -->
+
+    <!--* APP SECTION  -->
+    <section class="app">
+        <div class="container">
+            <div class="app__content">
+                <div class="app__imgbox">
+                    <img src="./image/app/app-main-img.jpg" alt="image...">
+                    <svg width="74" height="53" viewBox="0 0 74 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M72.128 8.49194C71.2856 5.30789 68.8039 2.80023 65.6528 1.94922C59.9412 0.402832 37.0384 0.402832 37.0384 0.402832C37.0384 0.402832 14.1358 0.402832 8.42406 1.94922C5.27297 2.80036 2.7912 5.30789 1.94888 8.49194C0.418457 14.2632 0.418457 26.3045 0.418457 26.3045C0.418457 26.3045 0.418457 38.3457 1.94888 44.117C2.7912 47.301 5.27297 49.7042 8.42406 50.5552C14.1358 52.1016 37.0384 52.1016 37.0384 52.1016C37.0384 52.1016 59.9411 52.1016 65.6528 50.5552C68.8039 49.7042 71.2856 47.301 72.128 44.117C73.6584 38.3457 73.6584 26.3045 73.6584 26.3045C73.6584 26.3045 73.6584 14.2632 72.128 8.49194ZM29.5479 37.237V15.3719L48.6901 26.3047L29.5479 37.237Z"
+                            fill="#212121" fill-opacity="0.8" />
+                    </svg>
+                </div>
+                <div class="app__info">
+                    <h3 class="app__title">Скачайте бесплатно приложение SPEAK</h3>
+                    <div class="app__card">
+                        <div class="app__card-imgbox">
+                            <img src="./image/app/app-logo-img.svg" alt="image">
+                        </div>
+                        <div class="app__card-info">
+                            <h4>SPEAK</h4>
+                            <p>онлайн сессии с психологом</p>
+                            <p>доступно для iOS и Android</p>
+                        </div>
+                    </div>
+                    <div class="app__downloads">
+                        <div class="app__download">
+                            <img src="./image/app/appstore.svg" alt="image...">
+                        </div>
+                        <div class="app__download">
+                            <img src="./image/app/playstore.svg" alt="image...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* APP SECTION END -->
+
+    <!--* SNEAKERS SECTION -->
+    <section class="sneakers">
+        <div class="container">
+            <div class="sneakers__content">
+                <h3 class="sneakers__title">Психологи работающие с актуальными темами</h3>
+                <div class="sneakers__nav">
+                    <span class="sneakers__nav-button button__sneakers">Чувства</span>
+                    <span class="sneakers__nav-button button__sneakers">Одиночество</span>
+                    <span class="sneakers__nav-button button__sneakers sneakers--nav--button--active">Вредные
+                        привычки</span>
+                    <span class="sneakers__nav-button button__sneakers">Отношения</span>
+                    <span class="sneakers__nav-button button__sneakers">Работа</span>
+                    <span class="sneakers__nav-button button__sneakers">Смыслы</span>
+                    <span class="sneakers__nav-button button__sneakers">Одиночество</span>
+                    <span class="sneakers__nav-button button__sneakers">Одиночество</span>
+                    <span class="sneakers__nav-button button__sneakers">Отношения с близкими</span>
+                    <span class="sneakers__nav-button button__sneakers sneakers--nav--button--bg">+ 300
+                        психологов</span>
+                </div>
+                <div class="swiper sneakers__cards">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sneakers__card">
+                                <div class="sneakers__card-imgbox">
+                                    <img src="./image/sneakers/user-1.jpg" alt="image...">
+                                </div>
+                                <span class="sneakers__card-title">Илья Благов</span>
+                                <div class="sneakers__card-footer">
+                                    <div class="sneakers__card-stars">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                    </div>
+                                    <img src="./image/sneakers/arrow-right-icon.svg" class="sneakers__card-right__icon"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sneakers__card">
+                                <div class="sneakers__card-imgbox">
+                                    <img src="./image/sneakers/user-2.jpg" alt="image...">
+                                </div>
+                                <span class="sneakers__card-title">Иванна Есина</span>
+                                <div class="sneakers__card-footer">
+                                    <div class="sneakers__card-stars">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                    </div>
+                                    <img src="./image/sneakers/arrow-right-icon.svg" class="sneakers__card-right__icon"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sneakers__card">
+                                <div class="sneakers__card-imgbox">
+                                    <img src="./image/sneakers/user-3.jpg" alt="image...">
+                                </div>
+                                <span class="sneakers__card-title">Артур Островский</span>
+                                <div class="sneakers__card-footer">
+                                    <div class="sneakers__card-stars">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                    </div>
+                                    <img src="./image/sneakers/arrow-right-icon.svg" class="sneakers__card-right__icon"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sneakers__card">
+                                <div class="sneakers__card-imgbox">
+                                    <img src="./image/sneakers/user-4.jpg" alt="image...">
+                                </div>
+                                <span class="sneakers__card-title">Юля Заграничная</span>
+                                <div class="sneakers__card-footer">
+                                    <div class="sneakers__card-stars">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                    </div>
+                                    <img src="./image/sneakers/arrow-right-icon.svg" class="sneakers__card-right__icon"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sneakers__card">
+                                <div class="sneakers__card-imgbox">
+                                    <img src="./image/sneakers/user-5.jpg" alt="image...">
+                                </div>
+                                <span class="sneakers__card-title">Андрей Ян</span>
+                                <div class="sneakers__card-footer">
+                                    <div class="sneakers__card-stars">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                        <img src="./image/sneakers/star-icon.svg" alt="icon...">
+                                    </div>
+                                    <img src="./image/sneakers/arrow-right-icon.svg" class="sneakers__card-right__icon"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* SNEAKERS SECTION END -->
+
+    <!--* HELP SECTION -->
+    <section class="help">
+        <div class="container">
+            <div class="help__content">
+                <div class="help__info">
+                    <h2 class="help__title">Поможем вам</h2>
+                    <ul class="help__list">
+                        <li class="help__item">
+                            <div class="help__item-imgbox">
+                                <img src="./image/help/help-check-icon.svg" alt="icon...">
+                            </div>
+                            <span class="help__item-text">Разрешить причины сложных отношений с партнером</span>
+                        </li>
+                        <li class="help__item">
+                            <div class="help__item-imgbox">
+                                <img src="./image/help/help-check-icon.svg" alt="icon...">
+                            </div>
+                            <span class="help__item-text">Снять или снизить остроту переживаний</span>
+                        </li>
+                        <li class="help__item">
+                            <div class="help__item-imgbox">
+                                <img src="./image/help/help-check-icon.svg" alt="icon...">
+                            </div>
+                            <span class="help__item-text">Справиться с выгоранием на работе и найти мотивацию</span>
+                        </li>
+                        <li class="help__item">
+                            <div class="help__item-imgbox">
+                                <img src="./image/help/help-check-icon.svg" alt="icon...">
+                            </div>
+                            <span class="help__item-text">Понять себя в отношениях с близкими людьми</span>
+                        </li>
+                        <li class="help__item">
+                            <div class="help__item-imgbox">
+                                <img src="./image/help/help-check-icon.svg" alt="icon...">
+                            </div>
+                            <span class="help__item-text">Найти себя и понимать свои желания</span>
+                        </li>
+                        <li class="help__item">
+                            <div class="help__item-imgbox">
+                                <img src="./image/help/help-check-icon.svg" alt="icon...">
+                            </div>
+                            <span class="help__item-text">Исследовать и управлять изменениями в своей жизни</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="help__imgbox">
+                    <img src="./image/help/help-main-img.png" alt="image...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* HELP SECTION END -->
+
+    <!--* ADVANTAGE SECTION -->
+    <section class="advantage">
+        <div class="container">
+            <div class="advantage__content">
+                <div class="advantage__imgbox">
+                    <img src="./image/advantage/phone.png" alt="image...">
+                </div>
+                <div class="advantage__info">
+                    <h2 class="advantage__title">Преимущества онлайн сессий с психологом</h2>
+                    <ul class="advantage__list">
+                        <li class="advantage__item">
+                            <h4>Занимайтесь где и как удобно</h4>
+                            <span>Дома или в поездке и в любом часовом поясе</span>
+                        </li>
+                        <li class="advantage__item">
+                            <h4>Меньше забот- больше мотивации</h4>
+                            <span>Не тратьте время на дорогу и управляйте занятиями в два клика</span>
+                        </li>
+                        <li class="advantage__item">
+                            <h4>Доверяйте себе</h4>
+                            <span>Выбирайте среди проверенных психологов, которые специаллизируются на ваших
+                                запросах</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* ADVANTAGE SECTION END -->
+
+    <!--* STEPS SECTION -->
+    <section class="steps">
+        <div class="container">
+            <div class="steps__content">
+                <h2 class="steps__title">Как мы отбираем специалистов?</h2>
+                <span class="steps__subtitle">Отбор проходят меньше 10% специаллистов</span>
+                <div class="steps__main">
+                    <div class="steps__items">
+                        <div class="steps__item">
+                            <h1 class="steps__item-number">1</h1>
+                            <div class="steps__text">
+                                <h4>Документы об образовании</h4>
+                                <span>Обязательно иметь высшее психологическое образование и сертификаты для ведения
+                                    психотерапии</span>
+                            </div>
+                        </div>
+                        <div class="steps__item">
+                            <h1 class="steps__item-number">2</h1>
+                            <div class="steps__text">
+                                <h4>Опыт частной практики и личной терапии</h4>
+                                <span>Нужно не менее 3-х лет частной практики, личная терапия и регулярные
+                                    супервизии</span>
+                            </div>
+                        </div>
+                        <div class="steps__item">
+                            <h1 class="steps__item-number">3</h1>
+                            <div class="steps__text">
+                                <h4>Собеседование с нашим экспертом-ментором</h4>
+                                <span>Отслеживаются коммуникативные способности, уровень эмпатии, манера и стиль беседы,
+                                    проффесиональные компетенции</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__imgbox">
+                        <img src="./image/steps/steps-img.png" alt="image...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* STEPS SECTION END -->
+
+    <!--* SERVICES SECTION -->
+    <section class="services">
+        <div class="container">
+            <div class="services__content">
+                <h2 class="services__title">О сервисе</h2>
+                <div class="services__main">
+                    <div class="services__imgbox">
+                        <img src="./image/services/services-main-img.png" alt="image...">
+                        <svg width="74" height="53" viewBox="0 0 74 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M72.128 8.49194C71.2856 5.30789 68.8039 2.80023 65.6528 1.94922C59.9412 0.402832 37.0384 0.402832 37.0384 0.402832C37.0384 0.402832 14.1358 0.402832 8.42406 1.94922C5.27297 2.80036 2.7912 5.30789 1.94888 8.49194C0.418457 14.2632 0.418457 26.3045 0.418457 26.3045C0.418457 26.3045 0.418457 38.3457 1.94888 44.117C2.7912 47.301 5.27297 49.7042 8.42406 50.5552C14.1358 52.1016 37.0384 52.1016 37.0384 52.1016C37.0384 52.1016 59.9411 52.1016 65.6528 50.5552C68.8039 49.7042 71.2856 47.301 72.128 44.117C73.6584 38.3457 73.6584 26.3045 73.6584 26.3045C73.6584 26.3045 73.6584 14.2632 72.128 8.49194ZM29.5479 37.237V15.3719L48.6901 26.3047L29.5479 37.237Z"
+                                fill="#212121" fill-opacity="0.8" />
+                        </svg>
+                    </div>
+                    <div class="services__items">
+                        <div class="services__item">
+                            <h1>900 +</h1>
+                            <span>регистраций вчера</span>
+                        </div>
+                        <div class="services__item">
+                            <h1>75 000 +</h1>
+                            <span>проведено сессий</span>
+                        </div>
+                        <div class="services__item">
+                            <h1>354 +</h1>
+                            <span>психологов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__cards">
+                    <div class="services__card">
+                        <div class="services__card-imgbox">
+                            <img src="./image/services/services-card-img-1.svg" alt="image...">
+                        </div>
+                        <div class="services__card-info">
+                            <h4>Подбор “По позже”</h4>
+                            <span>Подбор с возможностью бронирование сессии на будущее</span>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <div class="services__card-imgbox">
+                            <img src="./image/services/services-card-img-2.svg" alt="image...">
+                        </div>
+                        <div class="services__card-info">
+                            <h4>Подбор “Сейчас”</h4>
+                            <span>Подбор с возможностью начала сессии “здесь и сейчас”</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* SERVICES SECTION END -->
+
+    <!--* WORK SECTION -->
+    <section class="work">
+        <div class="container">
+            <div class="work__content">
+                <h2 class="work__title">Как это устроено</h2>
+                <div class="work__pagination">
+                    <span class="work__pagination-item work--pagination--item--active">1</span>
+                    <span class="work__pagination-item">2</span>
+                    <span class="work__pagination-item ">3</span>
+                    <span class="work__pagination-item">4</span>
+                </div>
+                <div class="work__main">
+                    <div class="work__items work--items--1">
+                        <div class="work__item">
+                            <h4>Заполните простую анкету</h4>
+                            <span>Расскажите, что вас беспокоит и что важно в психологе. </span>
+                        </div>
+                        <div class="work__item">
+                            <h4>Выберите способ связи с психологом</h4>
+                            <span>
+                                49руб/мин по
+                                <a href="#">
+                                    аудио/видео связи
+                                </a>
+                                200руб за 24 часа
+                                <a href="#">
+                                    чата + аудио сообщения
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="work__imgbox">
+                        <img src="./image/work/work-main-img.png" alt="image...">
+                    </div>
+                    <div class="work__items work--items--2">
+                        <div class="work__item work--item--active">
+                            <h4>Выберите психолога</h4>
+                            <span>Выберите понравившегося психолога </span>
+                        </div>
+                        <div class="work__item">
+                            <h4>Начните общение</h4>
+                            <span>Все общение происходит через платформу SPEAK. Вслучае если психолог вам не понравится,
+                                вы можете заменить его без дополнительных переплат</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work__item-mobile">
+                    <h4>Заполните простую анкету</h4>
+                    <span>Расскажите, что вас беспокоит и что важно в психологе. </span>
+                </div>
+                <a href="#" class="button__work work__button">Начать общение</a>
+            </div>
+        </div>
+    </section>
+    <!--* WORK SECTION END -->
+
+    <!--* CARD SECTION -->
+    <section class="card">
+        <div class="container">
+            <div class="card__content">
+                <h2 class="card__title">Услуги</h2>
+                <div class="card__main">
+                    <div class="card__box">
+                        <h4 class="card__box-title">24 часа чата </h4>
+                        <div class="card__price">
+                            <h1>4200₽</h1>
+                            <span>/24 часа</span>
+                        </div>
+                        <ul class="card__list">
+                            <li class="card__item">24 часа доступа к чату с психологом</li>
+                            <li class="card__item">Аудио сообщения</li>
+                        </ul>
+                        <div class="card__footer">
+                            <a href="#" class="button__card card__button">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="card__box">
+                        <h4 class="card__box-title">Аудио/Видео сессии </h4>
+                        <div class="card__price">
+                            <h1>49₽</h1>
+                            <span>/1 минута</span>
+                        </div>
+                        <ul class="card__list card--list--2">
+                            <li class="card__item">Безлимитный доступа к чату с психологом до начала сессии</li>
+                            <li class="card__item">Аудио/Видео звонки</li>
+                            <li class="card__item">Нет лимитов по времени разговора</li>
+                        </ul>
+                        <div class="card__footer">
+                            <div class="card__counter">
+                                <div class="card__counter-item">
+                                    <h4>
+                                        <img class="card__left" src="./image/card/card-left-icon.svg" alt="">
+                                        <span class="card__count">10</span>
+                                        <img class="card__right" src="./image/card/card-right-icon.svg" alt="">
+                                    </h4>
+                                    <span>min</span>
+                                </div>
+                                <div class="card__counter-item">
+                                    <h4>
+                                        <span id="card__price" data-price="49">49</span>
+                                    </h4>
+                                    <span>₽</span>
+                                </div>
+                            </div>
+                            <a href="#" class="button__card card__button">Перейти</a>
+                        </div>
+                        <div class="card__shape">
+                            <span>Популярное</span>
+                            <img src="./image/card/card-star-icon.svg" alt="icon...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* CARD SECTION END -->
+
+    <!--* APP SECTION  -->
+    <section class="app">
+        <div class="container">
+            <div class="app__content app--content--2">
+                <div class="app__info app--info-2">
+                    <h3 class="app__title">Скачайте бесплатно приложение SPEAK</h3>
+                    <div class="app__card">
+                        <div class="app__card-imgbox ">
+                            <img src="./image/app/app-logo-img.svg" alt="image">
+                        </div>
+                        <div class="app__card-info">
+                            <h4>SPEAK</h4>
+                            <p>онлайн сессии с психологом</p>
+                            <p>доступно для iOS и Android</p>
+                        </div>
+                    </div>
+                    <div class="app__downloads">
+                        <div class="app__download">
+                            <img src="./image/app/appstore.svg" alt="image...">
+                        </div>
+                        <div class="app__download">
+                            <img src="./image/app/playstore.svg" alt="image...">
+                        </div>
+                    </div>
+                </div>
+                <div class="app__imgbox app--card--imgbox">
+                    <img src="./image/app/app-main-img-2.png" alt="image...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* APP SECTION END -->
+
+    <!--* REVIEW SECTION -->
+    <section class="review">
+        <div class="container">
+            <div class="review__content">
+                <h2 class="review__title">Отзывы</h2>
+                <div class="swiper review__cards">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review__card">
+                                <div class="review__card-imgbox">
+                                    <img src="./image/review/review-user-img-1.jpg" alt="image...">
+                                </div>
+                                <div class="review__card-info">
+                                    <div class="review__card-header">
+                                        <div class="review__card-header__imgbox">
+                                            <img src="./image/review/review-user-img-1.jpg" alt="image...">
+                                        </div>
+                                        <div class="review__card-header__main">
+                                            <div class="review__card-titles">
+                                                <span>Sophia Jones</span>
+                                                <h5>Teacher</h5>
+                                            </div>
+                                            <div class="review__card-rating">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__card-description">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and encouragement. And she’s easy to open up to, making
+                                        me feel heard and understood.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review__card">
+                                <div class="review__card-imgbox">
+                                    <img src="./image/review/review-user-img-2.jpg" alt="image...">
+                                </div>
+                                <div class="review__card-info">
+                                    <div class="review__card-header">
+                                        <div class="review__card-header__imgbox">
+                                            <img src="./image/review/review-user-img-2.jpg" alt="image...">
+                                        </div>
+                                        <div class="review__card-header__main">
+                                            <div class="review__card-titles">
+                                                <span>Jay K. Braun</span>
+                                                <h5>Artist</h5>
+                                            </div>
+                                            <div class="review__card-rating">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__card-description">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review__card">
+                                <div class="review__card-imgbox">
+                                    <img src="./image/review/review-user-img-3.jpg" alt="image...">
+                                </div>
+                                <div class="review__card-info">
+                                    <div class="review__card-header">
+                                        <div class="review__card-header__imgbox">
+                                            <img src="./image/review/review-user-img-3.jpg" alt="image...">
+                                        </div>
+                                        <div class="review__card-header__main">
+                                            <div class="review__card-titles">
+                                                <span>Jay K. Braun</span>
+                                                <h5>Artist</h5>
+                                            </div>
+                                            <div class="review__card-rating">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                                <img src="./image/review/review-star-icon.svg" alt="icon...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__card-description">
+                                        After just 2 months, Speak has already made such an impact on my life. It has
+                                        helped me develop manageable solutions to feelings of stress, anxiety, and
+                                        overwhelm. Speaker helped me navigate the difficult stages of grief after losing
+                                        my mom, with compassion and encouragement. And she’s easy to open up to, making
+                                        me feel heard and understood.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* REVIEW SECTION END -->
+
+    <!--* CEO SECTION -->
+    <section class="ceo">
+        <div class="container">
+            <div class="ceo__content">
+                <h2 class="ceo__title">Детский психолог онлайн</h2>
+                <div class="ceo__main">
+                    <div class="ceo__left">
+                        <div class="ceo__item">
+                            <h4 class="ceo__item-title">Чем поможет детский психолог онлайн?</h4>
+                            <p class="ceo__item-description">
+                                Каждый родитель хочет, чтобы его ребенок рос сильной уравновешенной личностью. Мы
+                                понимаем,
+                                что именно в детстве формируются зачатки характера. Как справиться с возникающими
+                                проблемами, как выстроить отношения с ребенком, чтобы он доверял вам? На эти и другие
+                                вопросы поможет ответить детский психолог онлайн.
+                            </p>
+                        </div>
+                        <div class="ceo__item">
+                            <h4 class="ceo__item-title">Преимущества онлайн-консультации детского психолога</h4>
+                            <p class="ceo__item-description">
+                                Главный плюс сеанса в таком формате – экономия времени. Вам не придется тратить время на
+                                дорогу и долгие сборы. Все, что нужно – компьютер или смартфон, микрофон и блокнот с
+                                ручкой,
+                                чтобы записывать важную информацию. Если вам или ребенку тяжело общаться с незнакомым
+                                человеком лично, онлайн-связь в этом случае упростит дело.
+                            </p>
+                        </div>
+                        <div class="ceo__item">
+                            <h4 class="ceo__item-title">Когда нужна помощь детского психолога онлайн?</h4>
+                            <p class="ceo__item-description">
+                                Онлайн-консультация детского психолога может быть полезна, если у вас есть вопросы по
+                                таким
+                                темам, как:
+                            </p>
+                            <ul class="ceo__item-list">
+                                <li>Плохая успеваемость;</li>
+                                <li>Стеснительность;</li>
+                                <li>Цифровая зависимость;</li>
+                                <li>Агрессия;</li>
+                                <li>Потеря близкого в семье;</li>
+                                <li>Возрастной кризис;</li>
+                                <li>Подготовка к детскому саду или школе;</li>
+                                <li>Подготовка к детскому саду или школе;</li>
+                            </ul>
+                            <p class="ceo__item-description">
+                                Это лишь часть тем, которые можно затронуть. Помните, что, если возникает ситуация, в
+                                которой вы самостоятельно не можете разобраться, сейчас консультация детского психолога
+                                онлайн поможет найти ответы.
+                            </p>
+                        </div>
+                        <div class="ceo__item">
+                            <h4 class="ceo__item-title">Как проходит онлайн-консультация детского психолога?</h4>
+                            <p class="ceo__item-description">
+                                Задать вопрос детскому психологу онлайн может как сам ребенок, так и родитель.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ceo__right">
+                        <div class="ceo__item">
+                            <div class="ceo__item-description">
+                                На первом сеансе обычно присутствует родитель или опекун, а также сам «виновник
+                                торжества».
+                                Следующие сеансы могут быть и без взрослого, если ребенок сам в состоянии связаться
+                                через
+                                интернет.
+                            </div>
+                            <div class="ceo__item-description">
+                                Бывает и так, что сначала ребенку присутствовать необязательно. В этом случае работа
+                                происходит
+                                с родителем, а если есть необходимость, позже присоединяется ребенок.
+                            </div>
+                            <div class="ceo__item-description">
+                                Психолог по детским вопросам онлайн может попросить ребенка нарисовать что-то, далее по
+                                этим
+                                рисункам он проведет диагностику. Родитель тоже является звеном связи с психикой
+                                ребенка.
+                                Через
+                                него психолог может сделать вывод о том, какая проблема сейчас назрела.
+                            </div>
+                            <div class="ceo__item-description">
+                                Если специалист попросит вас пройти обследование или сдать анализы для более ясной
+                                картины,
+                                не
+                                пугайтесь, это нормально. Таким образом, вы оба сможете исключить какие-либо диагнозы
+                            </div>
+                        </div>
+                        <div class="ceo__item">
+                            <h4 class="ceo__item-title">О чем поговорить с детским психологом?</h4>
+                            <p class="ceo__item-description">
+                                Родители малышей часто обращаются с вопросами об адаптации в детском саду. Есть
+                                тревожные
+                                мамы, которые сомневаются, стоит ли отдавать малыша в сад или же пока слишком рано.
+                                Очень
+                                многих волнует, что воспитатель будет срываться на ребенка. Это логично, ведь в силу
+                                того,
+                                что в СМИ регулярно появляются жуткие новости о чудовищных ЧП в детсадах, беспокойство
+                                обосновано.
+                            </p>
+                            <p class="ceo__item-description">
+                                Отдельный вопрос подготовки к саду. В интернете полно информации в таком ключе: «ребенок
+                                должен научиться самостоятельно есть, ходить в туалет и засыпать сам перед тем, как идти
+                                в
+                                сад». Особо мнительные беспрекословно верят, другие понимают: ребенок ничего никому не
+                                должен. Его невозможно научить чему-то, пока он сам не захочет делать это. «Дрессировке»
+                                малыши не поддаются. Но пугаться не стоит, в любом случае, воспитатели будут помогать
+                                малышам в этих вопросах. Главное – настроиться на позитив и верить в хорошее.
+                            </p>
+                            <p class="ceo__item-description">
+                                Дети постарше сталкиваются с проблемами переходного возраста, неуверенностью в себе,
+                                безответной любовью и другими. Если вы понимаете, что вам с чадом необходима
+                                онлайн-консультация, вы можете выбрать специалиста на нашем сайте.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* CEO SECTION END -->
+
+    <!--* FOOTER SECTION -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo">
+                        <img src="./image/header/logo.svg" alt="image...">
+                    </a>
+                    <div class="footer__nav">
+                        <div class="footer__nav-item">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                        </div>
+                        <div class="footer__nav-item">
+                            <a href="#">Blog</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="footer__nav-item">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms and Conditions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__social-icons">
+                        <a href="#" class="footer__social-icon">
+                            <img src="./image/footer/facebook.svg" alt="icon...">
+                        </a>
+                        <a href="#" class="footer__social-icon">
+                            <img src="./image/footer/instagram.svg" alt="icon...">
+                        </a>
+                        <a href="#" class="footer__social-icon">
+                            <img src="./image/footer/linkedin.svg" alt="icon...">
+                        </a>
+                        <a href="#" class="footer__social-icon">
+                            <img src="./image/footer/twitter.svg" alt="icon...">
+                        </a>
+                    </div>
+                    <div class="footer__addresses">
+                        <div class="footer__address">
+                            <img src="./image/footer/message.svg" alt="icon...">
+                            <a href="#">info@speak.help</a>
+                        </div>
+                        <div class="footer__address">
+                            <img src="./image/footer/location.svg" alt="icon...">
+                            <a href="#">33 W 60th Street, 8th FI New York, NY 10023</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--* FOOTER SECTION END -->
+
+    <!--* ============================================ Frontend Developer - Umidjon Karabaev ============================================ *-->
+
+    
+    <!--* SWIPER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--* SWIPER JS END -->
+    <!--* JAVASCRIPT FILES -->
+    <script src="./js/main.js"></script>
+    <!--* JAVASCRIPT FILES END -->
+
+</body>
+
+</html>

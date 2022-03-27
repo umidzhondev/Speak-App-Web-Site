@@ -1,0 +1,121 @@
+.hero {
+    width: 100%;
+
+
+
+    @include responsive(lg) {
+        margin: 220px 0;
+    }
+    @include responsive(md) {
+        margin: 200px 0;
+    }
+    @include responsive(sm) {
+        margin: 190px 0;
+    }
+    @include responsive(xs) {
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    @include responsive(xxs) {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        width: 100%;
+        @include flex(space-between, center, row);
+
+        @include responsive(lg) {
+            position: relative;
+        }
+
+        @include responsive(xs) {
+            flex-direction: column
+        }
+    }
+
+    &__info {
+        @include flex(space-between, flex-start, column);
+
+        @include responsive(lg) {
+            position: absolute;
+            left: 0;
+            width: 60%;
+        }
+
+        @include responsive(sm) {
+            width: 55%;
+        }
+
+        @include responsive(xs) {
+            position: static;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__suptitle {
+        color: $primary-color;
+        line-height: 140%;
+
+        @include responsive(sm) {
+            font-size: 1rem;
+        }
+
+        @include responsive(xxs) {
+            margin-bottom: 5px;
+        }
+        @include responsive(ss){
+         font-size: 0.85rem;
+         margin-bottom: 8px;   
+        }
+    }
+
+    &__title {
+        color: $black-color;
+        margin-bottom: 50px;
+
+        @include responsive(lg) {
+            margin-bottom: 30px;
+        }
+
+        @include responsive(md) {
+            margin-bottom: 50px;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 30px;
+        }
+    }
+
+
+    &__imgbox {
+        @include flex(space-between, center, row);
+
+        @include responsive(lg) {
+            position: absolute;
+            width: 480px;
+            right: -10%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @include responsive(sm) {
+            width: 64%;
+        }
+
+        @include responsive(xs) {
+            position: static;
+            width: 90%;
+            margin: 0 auto;
+
+        }
+    }
+}

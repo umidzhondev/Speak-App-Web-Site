@@ -1,0 +1,201 @@
+.app {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        @include flex(space-between, center, row);
+
+        @include responsive(md) {
+            flex-direction: column;
+        }
+    }
+
+    &--content--2 {
+        @include responsive(md) {
+            flex-direction: row;
+        }
+
+        @include responsive(sm) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__imgbox {
+        position: relative;
+        @include flex(center, center, row);
+        right: 24px;
+
+        img {
+            object-fit: cover;
+        }
+
+        svg {
+            position: absolute;
+
+            &:hover path {
+                transition: .3s ease;
+                cursor: pointer;
+                fill-opacity: 1;
+                fill: red;
+            }
+
+            @include responsive(xs) {
+                width: 50px;
+            }
+        }
+
+        @include responsive(lg) {
+            flex: 1.5;
+        }
+
+        @include responsive(md) {
+            right: 0;
+        }
+    }
+
+    &__info {
+        @include flex(center, flex-start, column);
+        flex: 1;
+
+        @include responsive(sm) {
+            align-items: center;
+        }
+    }
+
+    &--info--2 {
+        @include responsive(md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        color: $black-color;
+        margin-bottom: 37px;
+
+        @include responsive(lg) {
+            margin-bottom: 15px;
+        }
+
+        @include responsive(sm) {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 30px;
+            font-size: 26px;
+        }
+
+        @include responsive(xxs) {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    &__card {
+        @include flex(flex-start, center, row);
+        margin-bottom: 70px;
+
+        @include responsive(lg) {
+            margin-bottom: 30px;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 50px;
+        }
+
+        &-imgbox {
+            border-radius: $border-radius-12;
+            box-shadow: $second-shadow;
+            background-color: #fff;
+            overflow: hidden;
+            width: 90px;
+            height: 90px;
+            padding: 15px;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @include responsive(xs) {
+                padding: 17px;
+            }
+
+            @include responsive(xxs) {
+                padding: 20px;
+            }
+        }
+
+        &-info {
+            @include flex(center, flex-start, column);
+
+            h4 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 140%;
+                margin-bottom: 5px;
+                color: $primary-color;
+
+                @include responsive(xs) {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: start;
+                color: $black-lighten-color;
+
+                &:first-child {
+                    margin-bottom: 5px;
+                }
+
+                @include responsive(xxs) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &__downloads {
+        @include flex(flex-start, center, row);
+        gap: 20px;
+    }
+
+    &__download {
+        @include flex(center, center, row);
+        background-color: #2E3A59;
+        padding: 8px 12px;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &--card--imgbox {
+        @include responsive(md) {
+            flex: 1;
+        }
+
+        @include responsive(sm) {
+            width: 80%;
+        }
+
+        @include responsive(xs) {
+            width: 90%;
+        }
+
+        @include responsive(xxs) {
+            width: 100%;
+        }
+    }
+}

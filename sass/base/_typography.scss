@@ -1,0 +1,67 @@
+body {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+
+    @include responsive(sm) {
+        font-size: 2rem;
+    }
+
+    @include responsive(xxs) {
+        font-size: 1.8rem;
+    }
+
+    @include responsive(ss) {
+        font-size: 1.6rem;
+    }
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+
+    @include responsive(lg) {
+        font-size: 32px;
+    }
+
+    @include responsive(md) {
+        font-size: 28px;
+    }
+
+    @include responsive(xs) {
+        font-size: 26px;
+    }
+
+    @include responsive(xxs) {
+        font-size: 24px;
+    }
+
+    @include responsive(ss) {
+        font-size: 20px;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+p,
+a,
+span {
+    font-size: 18px;
+    line-height: 1.2;
+}

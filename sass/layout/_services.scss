@@ -1,0 +1,246 @@
+.services {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        @include flex(space-between, center, column);
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        text-align: center;
+        color: $black-color;
+
+        @include responsive(xs) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__main {
+        width: 100%;
+        @include flex(space-between, center, row);
+        margin-bottom: 66px;
+
+        @include responsive(md) {
+            margin-bottom: 40px;
+        }
+
+        @include responsive(sm) {
+            flex-direction: column-reverse;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__imgbox {
+        position: relative;
+        @include flex(center, center, row);
+        flex: 3;
+        margin-right: 95px;
+
+        @include responsive(lg) {
+            flex: 2;
+            margin-right: 40px;
+        }
+
+        @include responsive(sm) {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        svg {
+            position: absolute;
+            cursor: pointer;
+
+            path {
+                transition: .3s ease;
+            }
+
+            &:hover path {
+                fill: red;
+                fill-opacity: 1;
+            }
+            @include responsive(xxs){
+            width: 55px;
+            }
+        }
+    }
+
+    &__items {
+        @include flex(space-between, flex-start, column);
+        flex: 1;
+
+        @include responsive(sm) {
+            width: 90%;
+            justify-content: space-between;
+            flex-direction: row
+        }
+
+        @include responsive(xs) {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        @include flex(space-between, flex-start, column);
+        margin-bottom: 40px;
+
+        @include responsive(lg) {
+            margin-bottom: 30px;
+        }
+
+        @include responsive(md) {
+            margin-bottom: 20px;
+        }
+
+        @include responsive(xs) {
+            flex: 1;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            color: $yellow-dark-color;
+
+            @include responsive(lg) {
+                font-size: 42px;
+            }
+
+            @include responsive(md) {
+                font-size: 36px;
+            }
+
+            @include responsive(xs) {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            @include responsive(xxs) {
+                font-size: 20px;
+            }
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: $black-color;
+
+            @include responsive(lg) {
+                font-size: 16px;
+            }
+
+            @include responsive(xs) {
+                text-align: center;
+            }
+
+            @include responsive(xxs) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__cards {
+        width: 100%;
+        @include flex(space-between, center, row);
+        gap: 20px;
+
+        @include responsive(sm) {
+            flex-direction: column
+        }
+    }
+
+    &__card {
+        @include flex(flex-start, center, row);
+        padding: 20px 30px;
+        flex: 1;
+        border-radius: $border-radius-24;
+        box-shadow: $second-shadow;
+
+        @include responsive(md) {
+            padding: 10px 18px;
+        }
+
+        @include responsive(sm) {
+            width: 100%;
+        }
+
+        @include responsive(xs) {
+            padding: 18px;
+        }
+
+        @include responsive(xxs) {
+            padding: 15px;
+        }
+
+        &-imgbox {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @include responsive(md) {
+                width: 140px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            @include responsive(sm) {
+                width: 110px;
+            }
+            
+        }
+
+        &-info {
+            @include flex(space-between, flex-start, column);
+
+            h4 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 120%;
+                color: $black-color;
+                margin-bottom: 5px;
+
+                @include responsive(md) {
+                    font-size: 18px;
+                }
+
+                @include responsive(xxs) {
+                    font-size: 16px;
+                }
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                color: $black-lighten-color;
+
+                @include responsive(md) {
+                    font-size: 16px;
+                }
+
+                @include responsive(xxs) {
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+}

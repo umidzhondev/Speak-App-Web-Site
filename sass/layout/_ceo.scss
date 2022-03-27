@@ -1,0 +1,115 @@
+.ceo {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+        @include flex(center, flex-start, column);
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        color: $black-color;
+
+        @include responsive(sm) {
+            text-align: center;
+            margin-inline: auto;
+        }
+
+        @include responsive(xs) {
+            margin-bottom: 40px;
+        }
+
+        @include responsive(xxs) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__main {
+        width: 100%;
+        @include flex(space-between, flex-start, row);
+        gap: 20px;
+
+        @include responsive(sm) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        @include flex(space-between, flex-start, column);
+        flex: 1;
+
+    }
+
+    &__right {
+        @include flex(space-between, flex-start, column);
+        flex: 1;
+
+        .ceo__item {
+
+            &-description:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__item {
+        width: 100%;
+        @include flex(space-between, flex-start, column);
+        margin-bottom: 30px;
+
+        @include responsive(sm) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            color: $black-color;
+            margin-bottom: 10px;
+
+            @include responsive(xs) {
+                font-size: 19px;
+            }
+
+            @include responsive(xxs) {
+                font-size: 18px;
+            }
+        }
+
+        &-description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $black-lighten-color;
+
+            @include responsive(xs) {
+                font-size: 15px;
+            }
+
+            @include responsive(xxs) {
+                font-size: 14px;
+            }
+        }
+
+        &-list {
+            @include flex(space-between, flex-start, column);
+            margin-top: 10px;
+            margin-bottom: 30px;
+
+            li {
+                list-style-type: disc;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                margin-bottom: 5px;
+                margin-left: 12px;
+                color: $black-lighten-color;
+            }
+        }
+    }
+
+
+}

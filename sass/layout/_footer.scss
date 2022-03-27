@@ -1,0 +1,132 @@
+.footer {
+    width: 100%;
+    padding: 70px 0;
+    margin: 0;
+
+    @include responsive(sm) {
+        padding: 50px 0;
+    }
+
+    &__content {
+        width: 100%;
+        @include flex(space-between, center, row);
+
+        @include responsive(md) {
+            flex-direction: column;
+            gap: 50px;
+            align-items: flex-start;
+        }
+    }
+
+    &__left {
+        @include flex(space-between, flex-start, column);
+        flex: 1;
+    }
+
+    &__logo {
+        margin-bottom: 40px;
+
+        @include responsive(sm) {
+            width: 150px;
+        }
+
+        @include responsive(xs) {
+            width: 140px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__nav {
+        @include flex(flex-start, center, row);
+        gap: 40px;
+
+        @include responsive(xs) {
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            @include flex(space-between, flex-start, column);
+            gap: 20px;
+
+            @include responsive(xs) {
+                flex: 1 1 50%-20;
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 120%;
+                color: $black-lighten-color;
+                transition: .3s ease;
+
+                @include responsive(xxs) {
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    &__right {
+        @include flex(space-between, flex-start, column);
+        flex: 1;
+    }
+
+    &__social-icons {
+        @include flex(flex-start, center, row);
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__social-icon {
+        width: 40px;
+        height: 40px;
+
+        @include responsive(xs) {
+            width: 35px;
+            height: 35px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__addresses {
+        @include flex(space-between, flex-start, column);
+        gap: 22px;
+    }
+
+    &__address {
+        @include flex(space-between, center, row);
+
+        img {
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            margin-right: 12px;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 120%;
+            color: $black-lighten-color;
+            transition: .3s ease;
+
+            @include responsive(xxs) {
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+}

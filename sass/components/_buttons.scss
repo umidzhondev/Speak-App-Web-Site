@@ -1,0 +1,107 @@
+.button {
+    &__main {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        border-radius: $border-radius-12;
+        box-shadow: $primary-shadow;
+        padding: 12px 30px;
+        color: #fff;
+        background: $primary-gradient-color;
+        transition: transform .4s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        @include responsive(ss) {
+            font-size: 15px;
+        }
+    }
+
+    &__sneakers {
+        padding: 10px 30px;
+        border-radius: $border-radius-12;
+        box-shadow: $second-shadow;
+        background-color: #fff;
+        color: $black-lighten-color;
+        transition: color .3s ease;
+        transition: box-shadow .3s ease;
+
+        &:hover,
+        &:active {
+            color: $primary-color;
+        }
+
+        @include responsive(md) {
+            padding: 10px 28px;
+        }
+
+        @include responsive(sm) {
+            padding: 10px 30px;
+            font-size: 17px;
+
+            &:hover {
+                box-shadow: $primary-shadow-2;
+            }
+        }
+
+        @include responsive(xs) {
+            font-size: 16px;
+        }
+
+        @include responsive(xxs) {
+            font-size: 14px;
+        }
+    }
+
+    &__work {
+        padding: 12px 30px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        border-radius: $border-radius-12;
+        box-shadow: $primary-shadow;
+        transition: .4s ease;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+            border: 1px solid $primary-color;
+        }
+        @include responsive(xxs){
+         font-weight: 600;
+         font-size: 16px;
+        }
+    }
+
+    &__card {
+        padding: 12px 30px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        border-radius: $border-radius-12;
+        box-shadow: $primary-shadow;
+        transition: .4s ease;
+        color: $primary-color;
+        background-color: #fff;
+
+        &:hover {
+            background-color: $primary-color;
+            color: #fff;
+        }
+
+        @include responsive(md) {
+            width: 100%;
+            text-align: center;
+        }
+        @include responsive(xxs){
+            font-size: 16px;
+            
+        }
+    }
+
+
+}

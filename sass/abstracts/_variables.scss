@@ -1,0 +1,22 @@
+// * Colors
+$primary-color: #00B9B6;
+$primary-gradient-color:linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+$primary-lighten-color : #00B9B6;
+$black-color:#0E0E0F;
+$black-lighten-color:#333;
+$white-color-opacity-7: rgba(249, 253, 255, 0.7);
+$black-color-opacity-8: #212121CC;
+$yellow-dark-color:#FFA800;
+$primary-color-opacity-10: #00B9B61A;
+$gray-color:#AFAFAF;
+$green-bg-color: #F0FBFD;
+
+// * Shadows
+$primary-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+$second-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+$third-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+$primary-shadow-2:0px 4px 25px rgba(0, 185, 182, 0.25);
+
+// * Border Radiuses
+$border-radius-12: 12px;
+$border-radius-24: 24px;

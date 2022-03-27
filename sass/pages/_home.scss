@@ -1,0 +1,15 @@
+section{
+    margin-bottom: 140px;
+    @include responsive(lg){
+        margin-bottom: 100px;
+    }
+    @include responsive(md){
+        margin-bottom: 90px;
+    }
+    @include responsive(md){
+        margin-bottom: 85px;
+    }
+    @include responsive(sm){
+        margin-bottom: 80px;
+    }
+}
