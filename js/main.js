@@ -43,15 +43,14 @@ navCloseBtn.addEventListener('click', () => {
     nav.classList.remove("open");
 });
 
-navLinks.forEach((link)=>{
-    link.addEventListener('click',() => {
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
         nav.classList.remove("open");
     });
 })
 
 // * Work Section 
-const workData = [
-    {
+const workData = [{
         title: `Заполните простую анкету`,
         description: `Расскажите, что вас беспокоит и что важно в психологе.`
     },
@@ -80,9 +79,9 @@ const workItemDescription = document.querySelector(".work__item-mobile span");
 const paginationItems = document.querySelectorAll(".work__pagination-item");
 
 // * Pagination Steps and Change Content
-paginationItems.forEach((item,index)=>{
-    item.addEventListener('click',() => {
-        paginationItems.forEach(i => i.classList.remove("work--pagination--item--active"));        
+paginationItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        paginationItems.forEach(i => i.classList.remove("work--pagination--item--active"));
         item.classList.add("work--pagination--item--active");
 
         // * Change Content 
@@ -97,11 +96,11 @@ const cardIncrementor = document.querySelector(".card__right")
 const cardCount = document.querySelector(".card__count")
 const cardPrice = document.querySelector("#card__price");
 
-cardDecrementor.addEventListener('click',() => {
+cardDecrementor.addEventListener('click', () => {
     +cardCount.textContent--;
     cardPrice.textContent = cardPrice.getAttribute("data-price") * cardCount.textContent
 });
-cardIncrementor.addEventListener('click',() => {
+cardIncrementor.addEventListener('click', () => {
     +cardCount.textContent++;
     cardPrice.textContent = cardPrice.getAttribute("data-price") * cardCount.textContent
 });
@@ -120,9 +119,16 @@ function resizeNavbarLanguage() {
 
 function navbarLanguageOpen(element) {
     element.addEventListener('click', () => {
-        navbarLanguageOptionsBox.classList.add("visible")
-        navbarLanguageIcon.classList.add("rotate-180deg")
+        console.log("working...");
+        editClassName(navbarLanguageOptionsBox,"visible")
+        editClassName(navbarLanguageIcon,"rotate-180deg")
     });
+}
+
+function editClassName(element, className) {
+    element.classList.contains(className) ?
+        element.classList.remove(className) :
+        element.classList.add(className);
 }
 
 // * Swiper Js
@@ -140,23 +146,23 @@ let swiper = new Swiper(".sneakers__cards", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    breakpoints:{
-        992:{
+    breakpoints: {
+        992: {
             slidesPerView: 5,
         },
-        768:{
+        768: {
             slidesPerView: 4,
             spaceBetween: 15,
         },
-        500:{
+        500: {
             slidesPerView: 3,
             spaceBetween: 12,
         },
-        401:{
+        401: {
             slidesPerView: 2,
             spaceBetween: 15,
         },
-        300:{
+        300: {
             slidesPerView: 1,
             spaceBetween: 10,
         },
@@ -175,12 +181,12 @@ let swiper2 = new Swiper(".review__cards", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    breakpoints:{
-        577:{
+    breakpoints: {
+        577: {
             slidesPerView: 2,
             spaceBetween: 15,
         },
-        300:{
+        300: {
             slidesPerView: 1,
             spaceBetween: 10,
         },
